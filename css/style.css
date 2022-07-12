@@ -1,0 +1,197 @@
+/*contacto*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: black;
+  font-size: 1.2rem;
+  line-height: 1.6em;
+  margin: 0;
+}
+
+h1 {
+  line-height: 1.3em;
+  font-size: 2em;
+}
+
+p {
+  margin-bottom: 1, 6em;
+}
+
+.container {
+  width: 85%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  letter-spacing: 5px;
+  font-size: 1.2em;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation ul li {
+  display: inline-block;
+}
+
+.navigation ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.4 linear;
+  border-radius: 5px;
+}
+
+.navigation ul li a:hover {
+  background: rgb(209, 205, 205);
+}
+
+.main {
+  padding-top: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+  }
+
+  .navigation {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .navigation ul {
+    display: none;
+  }
+
+  .navigation ul.show {
+    display: block;
+  }
+
+  .navigation ul li {
+    display: block;
+  }
+
+  .navigation ul li a {
+    display: block;
+    padding: 0.5rem 0;
+    transition: all 0.4 linear;
+    border-radius: 5px;
+  }
+
+  .navigation ul li a:hover {
+    background: rgb(209, 205, 205);
+  }
+}
+
+footer
+footer #social {
+  text-align: center;
+  margin-top: -20px;
+}
+
+footer #botones {
+  margin: 5em auto 2em;
+  text-transform: uppercase;
+  color: #333;
+}
+
+footer #botones span {
+  display: block;
+  font-size: 12px;
+  margin: 15px auto 20px;
+  letter-spacing: 1.3px;
+}
+
+footer #social li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+footer #botones div {
+  text-align: center;
+}
+
+footer #botones img {
+  max-width: 60px;
+}
+
+@media (max-width: 768px) {
+  footer #botones {
+    margin: 4em auto 0;
+  }
+
+  footer #botones div {
+    margin-bottom: 30px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
+
+body{
+  background-color: white;
+}
+header, .alert{
+  z-index: 100;
+}
+.description{
+  height: 25px;
+  overflow: hidden;
+  transition: height .3s ease-in .3s;
+}
+.description:hover{
+  height: 80px;
+}
+.carrito{
+  min-height: 80vh;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+.table__productos{
+  display: flex;
+}
+.table__productos > img{
+  width: 9rem;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+.table__cantidad > input{
+  width: 40px;
+  border: none;
+  outline: 0;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+.hide, .remove{
+  display: none;
+} 
